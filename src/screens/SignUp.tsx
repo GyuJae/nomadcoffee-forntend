@@ -1,4 +1,5 @@
-import { faBlackberry } from "@fortawesome/free-brands-svg-icons";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import AuthLayout from "../components/auth/AuthLayout";
@@ -127,7 +128,7 @@ const SignUp = () => {
       <PageTitle title="SignUp" />
       <FormBox>
         <HeaderContainer>
-          <FontAwesomeIcon icon={faBlackberry} size="3x" />
+          <FontAwesomeIcon icon={faCoffee} size="3x" />
           <Subtitle>Sign up to see coffee from your friends.</Subtitle>
         </HeaderContainer>
         <form onSubmit={handleSubmit(onSubmit)}>

@@ -21,14 +21,15 @@ const SEECOFFEESHOP_QUERY = gql`
 `;
 
 const DetailShop = () => {
-  //   const { shopId } = await useParams<ParamTypes>();
-  //   if (!shopId) {
-  //     return;
-  //   }
+  let id = 0;
+  const { shopId } = useParams<ParamTypes>();
+  if (shopId) {
+    id = +shopId;
+  }
   const { data } = useQuery<seeCoffeeShop, seeCoffeeShopVariables>(
     SEECOFFEESHOP_QUERY,
     {
-      variables: { id: 1 },
+      variables: { id },
     }
   );
 
